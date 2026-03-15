@@ -1,0 +1,16 @@
+appId: com.docsviewer.app
+productName: Docs Viewer
+directories:
+  buildResources: resources
+  output: release
+files:
+  - out/**/*
+  - "!out/**/*.map"
+win:
+  target: nsis
+  icon: resources/icon.ico
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  deleteAppDataOnUninstall: false
